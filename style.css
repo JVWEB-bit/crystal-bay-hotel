@@ -182,7 +182,7 @@ header nav ul .nav-booking a:hover {
     align-items: center;
     background:
         linear-gradient(90deg, rgba(8, 28, 46, 0.82) 0%, rgba(8, 28, 46, 0.62) 44%, rgba(8, 28, 46, 0.18) 100%),
-        url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=80") center 52% / cover no-repeat;
+        url("bgimage1.webp") center 52% / cover no-repeat;
 }
 
 .hero-content {
@@ -831,7 +831,7 @@ footer .copyright {
         min-height: 540px;
         background-image:
             linear-gradient(90deg, rgba(8, 28, 46, 0.82), rgba(8, 28, 46, 0.48)),
-            url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80");
+            url("bgimage1.webp");
     }
 
     #home h1 {
