@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Bay Hotel</title>
+    <meta name="description" content="Experience comfort and beachfront hospitality at Crystal Bay Hotel. Explore our rooms, services, and booking options.">
+    <meta name="theme-color" content="#102a43">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <nav aria-label="Main navigation">
+            <a class="site-brand" href="#home">Crystal Bay Hotel</a>
+            <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="primary-navigation">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="nav-booking"><a href="#booking">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home">
+            <div class="hero-content">
+                <p class="hero-eyebrow">A MORE BEAUTIFUL WAY TO STAY</p>
+                <h1>Welcome to Crystal Bay Hotel</h1>
+                <p class="hero-description">Experience luxury, comfort, and unforgettable moments by the sea.</p>
+                <div class="hero-actions">
+                    <a class="button button-gold" href="#rooms">Explore Rooms</a>
+                    <a class="button button-outline" href="#booking">Book Your Stay</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking">
+            <p class="section-eyebrow">YOUR STAY, YOUR WAY</p>
+            <h2>Find Your Perfect Stay</h2>
+            <form id="booking-form" novalidate>
+                <div class="booking-field">
+                    <label for="checkin">Check-in Date</label>
+                    <input type="date" id="checkin" name="checkin" required>
+                </div>
+
+                <div class="booking-field">
+                    <label for="checkout">Check-out Date</label>
+                    <input type="date" id="checkout" name="checkout" required>
+                </div>
+
+                <div class="booking-field">
+                    <label for="guests">Number of Guests</label>
+                    <select id="guests" name="guests" required>
+                    <option value="" selected disabled>Select guests</option>
+                    <option value="1">1 Guest</option>
+                    <option value="2">2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    </select>
+                </div>
+
+                <button type="submit">Search Rooms</button>
+                <p class="form-message" id="booking-message" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <section id="rooms">
+            <p class="section-eyebrow">REST & RECHARGE</p>
+            <h2>Our Rooms</h2>
+            <p class="section-intro">Explore our rooms and facilities, thoughtfully designed for a comfortable beachfront stay.</p>
+            <div class="room-container">
+                <article class="room-card">
+                    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" alt="Interior of the Standard Room" loading="lazy">
+                    <div class="room-card-content">
+                        <h3>Standard Room</h3>
+                        <p>Designed for comfort and relaxation, with a queen-size bed, air conditioning, flat-screen TV, Wi-Fi, and an en-suite bathroom.</p>
+                        <ul class="room-amenities" aria-label="Standard Room features">
+                            <li>Queen-size bed</li>
+                            <li>Air conditioning</li>
+                            <li>Wi-Fi</li>
+                        </ul>
+                        <p class="room-price">₦25,000 <span>per night</span></p>
+                        <details class="room-details">
+                            <summary>View Room</summary>
+                            <p>Our Standard Room is designed for comfort, simplicity, and relaxation. It features a cozy queen-size bed with fresh linens, air conditioning, a flat-screen TV, and fast free Wi-Fi. The en-suite bathroom comes with 24-hour hot water and complimentary toiletries. Whether you are in Abuja for business or leisure, this room gives you everything you need for a peaceful stay at an affordable price.</p>
+                        </details>
+                        <a class="room-link" href="#booking">Check dates</a>
+                    </div>
+                </article>
+
+                <article class="room-card">
+                    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" alt="Interior of the Deluxe Room" loading="lazy">
+                    <div class="room-card-content">
+                        <h3>Deluxe Room</h3>
+                        <p>Enjoy a king-size bed, premium amenities, and views in a more indulgent room setting.</p>
+                        <ul class="room-amenities" aria-label="Deluxe Room features">
+                            <li>King-size bed</li>
+                            <li>Premium amenities</li>
+                            <li>Views</li>
+                        </ul>
+                        <p class="room-price">₦40,000 <span>per night</span></p>
+                        <details class="room-details">
+                            <summary>View Room</summary>
+                            <p>Experience the pinnacle of luxury in our Deluxe Room, featuring a king-size bed, premium amenities, and stunning views. Perfect for those seeking a more indulgent stay.</p>
+                        </details>
+                        <a class="room-link" href="#booking">Check dates</a>
+                    </div>
+                </article>
+
+                <article class="room-card">
+                    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" alt="Interior of the Luxury Suite" loading="lazy">
+                    <div class="room-card-content">
+                        <h3>Luxury Suite</h3>
+                        <p>A spacious suite with a separate living area and bedroom, king-size bed, private Jacuzzi, mini bar, smart TV, Wi-Fi, and room service.</p>
+                        <ul class="room-amenities" aria-label="Luxury Suite features">
+                            <li>Separate living area</li>
+                            <li>Private Jacuzzi</li>
+                            <li>Room service</li>
+                        </ul>
+                        <details class="room-details">
+                            <summary>View Room</summary>
+                            <p>Experience ultimate comfort and elegance in our Luxury Suite. Spaciously designed with a separate living area and bedroom, this suite offers a king-size bed with premium linens, exquisite interior decor, and breathtaking views. Enjoy modern luxury with a private Jacuzzi, mini bar, 65-inch smart TV, high-speed Wi-Fi, and personalized room service. Perfect for honeymoons, VIP guests, and travelers who demand nothing but the best while in Abuja.</p>
+                        </details>
+                        <a class="room-link" href="#booking">Check dates</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="services">
+            <p class="section-eyebrow">THOUGHTFUL COMFORTS</p>
+            <h2>Our Services</h2>
+
+            <article>
+                <span class="service-number" aria-hidden="true">01</span>
+                <h3>Free Wi-Fi</h3>
+                <p>Stay connected with our high-speed Wi-Fi service throughout the hotel.</p>
+            </article>
+
+            <article>
+                <span class="service-number" aria-hidden="true">02</span>
+                <h3>Swimming Pool</h3>
+                <p>Relax and unwind in our pristine swimming pool, perfect for a refreshing break during your stay.</p>
+            </article>
+
+            <article>
+                <span class="service-number" aria-hidden="true">03</span>
+                <h3>Restaurant</h3>
+                <p>Enjoy a delightful dining experience at our on-site restaurant, offering a variety of delicious meals and beverages.</p>
+            </article>
+        </section>
+
+        <section id="about">
+            <div class="about-copy">
+                <p class="section-eyebrow">WELCOME TO CRYSTAL BAY</p>
+                <h2>Comfort, with a sense of place.</h2>
+                <p>Welcome to <strong>Crystal Bay Hotel</strong>, your perfect destination for comfort, luxury, and exceptional hospitality.</p>
+                <p>We are committed to providing our guests with a peaceful and memorable experience. Whether you are traveling for business or leisure, our hotel offers a blend of modern elegance and home-like comfort. From our cozy Standard Rooms to our exquisite Luxury Suites, every room is thoughtfully designed with your relaxation in mind.</p>
+                <p>At <strong>Crystal Bay Hotel</strong>, we pride ourselves on outstanding customer service, 24/7 power supply, fast Wi-Fi, delicious cuisine, and a serene environment. Your satisfaction is our priority, and your comfort is our promise.</p>
+                <p class="about-signoff">Your comfort, our commitment.</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80" alt="Crystal Bay Hotel building" loading="lazy">
+        </section>
+
+        <section id="benefits">
+            <h2>Why Choose Us</h2>
+            <ul>
+                <li>Comfortable rooms</li> 
+                <li>Excellent customer service</li> 
+                <li>Convenient booking</li> 
+                <li>Affordable prices</li>
+                <li>24/7 power supply</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+                <p class="form-message" id="contact-message" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <a class="footer-brand" href="#home">Crystal Bay Hotel</a>
+        <p>Your comfort, our commitment.</p>
+        <nav aria-label="Footer navigation">
+            <a href="#home">Home</a>
+            <a href="#rooms">Rooms</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <p class="copyright">&copy; <span data-copyright-year>2026</span> Crystal Bay Hotel. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
